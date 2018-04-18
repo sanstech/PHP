@@ -48,7 +48,7 @@
   .form-signin .form-control:focus {
     z-index: 2;
   }
-  .form-signin input[type="text"] {
+  .form-signin input[type="text"]  {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
