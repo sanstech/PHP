@@ -38,6 +38,9 @@
     padding: 15px;
     margin: auto;
   }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
   .form-signin .form-control {
     position: relative;
     box-sizing: border-box;
@@ -48,23 +51,28 @@
   .form-signin .form-control:focus {
     z-index: 2;
   }
-  .form-signin input[type="text"]  {
+  .form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 </style>
 </head>
 
 <body class="text-center">
-  <form class="form-signin" method="POST" action="tes.php">
+  <form class="form-signin" method="POST" action="">
     <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Aplikasi Perhitungan Kalori Atlet</h1>
     <input type="text" class="form-control" placeholder="Nama"  name="nama" required autofocus><br>
     <input type="text" class="form-control" name="tinggi" placeholder="Tinggi" required><br>
     <input type="text" class="form-control" name="umur" placeholder="Umur" required><br>
     <input type="text" class="form-control" name="bb" placeholder="Berat Badan" required><br>
-    <input type="radio" value="laki" name="jk">Laki-Laki
+    <input type="radio" value="laki" name="jk" required>Laki-Laki
     &nbsp;&nbsp;
     <input type="radio" name="jk" value="perempuan">Perempuan
     <select name="aktifitas" style="margin-top: 10px;margin-bottom: 20px;"><br>
